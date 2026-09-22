@@ -16,6 +16,8 @@
 # next.js
 /.next/
 /out/
+# custom distDir configured in next.config.ts
+/dist/
 
 # production
 /build

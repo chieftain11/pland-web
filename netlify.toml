@@ -1,0 +1,7 @@
+# The Next.js app lives at the repo root, but next.config.ts sets
+# `distDir: "dist"`, so the build output is in `dist/` rather than `.next/`.
+# The Netlify Next.js runtime reads the build manifests from the publish
+# directory, so it must point at the configured distDir.
+[build]
+  command = "npm run build"
+  publish = "dist"
