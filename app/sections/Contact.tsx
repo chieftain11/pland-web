@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import ScrollReveal from "../components/ScrollReveal";
 
 export default function Contact() {
@@ -108,8 +109,15 @@ export default function Contact() {
                 {submitted ? "Заявка отправлена" : "Отправить заявку"}
               </button>
 
-              <p className="text-xs text-alabaster/40">
-                Отвечаем в течение одного рабочего дня. Консультация бесплатна.
+              <p className="text-xs text-alabaster/40 leading-relaxed">
+                Нажимая кнопку, вы соглашаетесь с{" "}
+                <Link
+                  href="/privacy"
+                  className="underline hover:text-alabaster transition-colors"
+                >
+                  политикой конфиденциальности
+                </Link>
+                . Консультация бесплатна.
               </p>
             </form>
           </ScrollReveal>

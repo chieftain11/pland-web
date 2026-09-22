@@ -1,0 +1,6 @@
+{
+  "name": "PlanD — Производство кухонь и шкафов на заказ",
+  "description": "PlanD создаёт корпусную мебель высокого качества: кухни и шкафы на заказ с эксклюзивным дизайном. Производство, доставка и монтаж под ключ.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

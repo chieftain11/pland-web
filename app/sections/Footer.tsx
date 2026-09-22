@@ -1,6 +1,13 @@
 import Image from "next/image";
+import Link from "next/link";
 
-const navLinks = ["Кухни", "Шкафы", "Материалы", "Проекты", "О нас"];
+const navLinks = [
+  { label: "Кухни", href: "/#kitchens" },
+  { label: "Шкафы", href: "/#wardrobes" },
+  { label: "Материалы", href: "/#materials" },
+  { label: "Проекты", href: "/#portfolio" },
+  { label: "Контакты", href: "/#contact" },
+];
 
 export default function Footer() {
   return (
@@ -8,7 +15,7 @@ export default function Footer() {
       <div className="mx-auto max-w-[1440px] px-6 md:px-12 lg:px-20">
         <div className="grid gap-12 md:grid-cols-3">
           <div>
-            <a href="#" className="relative block h-10 w-[86px]">
+            <Link href="/" className="relative block h-10 w-[86px]">
               <Image
                 src="/logo.png"
                 alt="PlanD"
@@ -16,7 +23,7 @@ export default function Footer() {
                 className="object-contain object-left"
                 sizes="86px"
               />
-            </a>
+            </Link>
             <p className="mt-6 max-w-xs text-sm leading-relaxed text-muted">
               Москва, Мастерская PlanD
               <br />
@@ -30,13 +37,13 @@ export default function Footer() {
             </h4>
             <nav className="mt-6 flex flex-col gap-3">
               {navLinks.map((link) => (
-                <a
-                  key={link}
-                  href={`#${link.toLowerCase()}`}
+                <Link
+                  key={link.label}
+                  href={link.href}
                   className="text-sm text-foreground/80 transition-colors hover:text-foreground"
                 >
-                  {link}
-                </a>
+                  {link.label}
+                </Link>
               ))}
             </nav>
           </div>
@@ -82,9 +89,13 @@ export default function Footer() {
 
         <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-concrete pt-8 text-xs text-muted md:flex-row md:items-center">
           <p>© 2026 PlanD. Все права защищены.</p>
-          <a href="#" className="transition-colors hover:text-foreground">
+          <Link
+            id="privacy-policy-link"
+            href="/privacy"
+            className="transition-colors hover:text-foreground underline underline-offset-4 decoration-concrete hover:decoration-foreground"
+          >
             Политика конфиденциальности
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
