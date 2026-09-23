@@ -55,32 +55,36 @@ export default function Footer() {
             <div className="mt-6 space-y-3 text-sm text-foreground/80">
               <p>
                 <a
-                  href="mailto:hello@pland.ru"
+                  href="mailto:Info@plan-d.ru"
                   className="transition-colors hover:text-foreground"
                 >
-                  hello@pland.ru
+                  Info@plan-d.ru
                 </a>
               </p>
               <p>
                 <a
-                  href="tel:+79990000000"
+                  href="tel:+79936301242"
                   className="transition-colors hover:text-foreground"
                 >
-                  +7 (999) 000-00-00
+                  +7 (993) 630-12-42
                 </a>
               </p>
               <div className="flex gap-4 pt-2">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/pland_mebel?stkn=MXNhNnNibXNweGR1dw=="
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-foreground/60 transition-colors hover:text-foreground"
                 >
                   Instagram
                 </a>
                 <a
-                  href="#"
+                  href="https://t.me/pland_mebel"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-foreground/60 transition-colors hover:text-foreground"
                 >
-                  Pinterest
+                  Telegram
                 </a>
               </div>
             </div>
