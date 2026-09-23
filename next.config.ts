@@ -2,8 +2,6 @@ import type { NextConfig } from "next";
 import path from "path";
 
 const nextConfig: NextConfig = {
-  output: "standalone",
-  distDir: "dist",
   allowedDevOrigins: [
     "**.run.app",
     "*.europe-west2.run.app",
